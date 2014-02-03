@@ -25,7 +25,7 @@ public class RocketController : MonoBehaviour {
 		rotationZ = pxsLeapInput.GetHandAxis("RotationZ")[Player];// * 45;
 
 		//Debug.Log (rotationX + " | " + rotationY + " | " + rotationZ);
-		Vector3 angle = new Vector3 ((90 - rotationY * 20), 90-rotationX * 45, 0.0f);
+		Vector3 angle = new Vector3 (rotationY * 20, rotationX * 30, 90.0f);
 
 		//if (Player == 0 && moveX * movementSpeed > 0.0f || Player == 1 && moveX * movementSpeed < 0.0f) {
 					if (moveZ != 0.0f || moveY != 0.0f || moveZ != 0.0f) {
